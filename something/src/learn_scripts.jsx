@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import Header from './Header.jsx';
+import Content from './Content.jsx';
+import Footer from './Footer.jsx';
 // this const page is a javascript object which is specific in JSX
 
 const page = (
@@ -43,30 +45,15 @@ function temp(){
     );
 }
 
-function Temp(){
-    return (
-        <>
-        <header>
-            <nav>
-                <img src="./src/assets/react-logo.png" alt="React" width="100px"/>
-            </nav>
-        </header>
-            
-        <h1>Fun Facts about React:</h1>
-        <ol>
-            <li>This is React</li>
-            <li>Yess</li>
-            <li>Okk</li>
-            <li>what's happening</li>
-        </ol>
-        <footer>
-            <small>
-                © 2024 Devansh . All rights reserved.
-            </small>
-        </footer>
-        </>
-    );
+function MainPage(){
+    return (<>
+        <Header />
+        <Content />
+        <Footer />
+    </>)
 }
 
+
 // ReactDOM.render(temp(), document.getElementById("root"));
-ReactDOM.render(<Temp/>, document.getElementById("root"));
+// in case of multiple renderes to the same element only the lsat one that is the 
+ReactDOM.render(<MainPage/>, document.getElementById("root"));

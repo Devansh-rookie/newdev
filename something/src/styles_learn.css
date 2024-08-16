@@ -1,0 +1,33 @@
+.logo{
+    width: 100px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align items also helps in fixing the aspect ratios of the logos and stuff*/
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.nav-items > li{
+    padding: 20px;
+}
+
+.bottom-foot{
+    color:whitesmoke;
+    background-color: rgb(42, 75, 184);
+    display: flex;
+    /* position:static; */
+    /* bottom: 10px; */
+}
+
+.to-center{
+    /* text-align: center; */
+    margin: 0 auto;
+}
