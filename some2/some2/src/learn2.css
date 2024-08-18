@@ -37,6 +37,12 @@ body{
     padding-left: 33vmax;
     color: #ffffff;
     font-size: 30px;
+    background-image: url(./assets/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 29vh;
+
 }
 
 .main--facts{
